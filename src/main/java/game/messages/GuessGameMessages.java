@@ -1,5 +1,8 @@
 package game.messages;
 
+/**
+ * 数あてゲームのメッセージ
+ */
 public class GuessGameMessages implements Messages {
     @Override
     public String welcome() {

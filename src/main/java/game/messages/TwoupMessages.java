@@ -1,5 +1,8 @@
 package game.messages;
 
+/**
+ * ツーアップゲームのメッセージ
+ */
 public class TwoupMessages implements Messages {
     @Override
     public String welcome() {
