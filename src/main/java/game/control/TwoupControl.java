@@ -2,6 +2,9 @@ package game.control;
 
 import java.util.Random;
 
+/**
+ * ツーアップゲームのゲーム進行係
+ */
 public class TwoupControl implements Control {
     private Integer money = Integer.valueOf(1000);
     private Random random = new Random();
@@ -30,6 +33,10 @@ public class TwoupControl implements Control {
         }
     }
 
+    /**
+     * コインを投げた結果を返します。
+     * @return コインが表の場合は true、裏の場合は false
+     */
     private boolean tossWasHead() {
         Integer next = random.nextInt();
         return (next % 2 == 0);

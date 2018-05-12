@@ -4,9 +4,18 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.Random;
 
+/**
+ * 数あてゲームのゲーム進行係
+ */
 public class GuessGameControl implements Control {
+
+    /** 数あてゲームの最小値 */
     private Integer lower = 1;
+
+    /** 数あてゲームの最小値 */
     private Integer upper = 100;
+
+    /** 数あてゲームの正解の値 */
     private Integer guess = new Random().nextInt(upper - lower) + lower;
 
     @Override
